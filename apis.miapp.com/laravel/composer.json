@@ -1,0 +1,5 @@
+{
+    "require": {
+        "binarycabin/laravel-uuid": "^1.0"
+    }
+}

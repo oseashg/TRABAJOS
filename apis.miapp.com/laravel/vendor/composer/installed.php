@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => 'c120a90312554d48b970cb29cda5ab53d5a05149',
+        'name' => '__root__',
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => 'c120a90312554d48b970cb29cda5ab53d5a05149',
+            'dev_requirement' => false,
+        ),
+        'binarycabin/laravel-uuid' => array(
+            'pretty_version' => '1.0.2',
+            'version' => '1.0.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../binarycabin/laravel-uuid',
+            'aliases' => array(),
+            'reference' => '0d1d0179fa3873f089d62065dccbd5eb123c3b77',
+            'dev_requirement' => false,
+        ),
+        'webpatser/laravel-uuid' => array(
+            'pretty_version' => '2.2.1',
+            'version' => '2.2.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../webpatser/laravel-uuid',
+            'aliases' => array(),
+            'reference' => 'c87d5c631938edad7aae96d27881e3ea3de23d80',
+            'dev_requirement' => false,
+        ),
+    ),
+);

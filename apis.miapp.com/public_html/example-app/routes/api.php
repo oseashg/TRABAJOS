@@ -2,7 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\controllers\v1\productoscontroller;
 
+use app\http\controller\v1\productoscontroller;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +16,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/v1/productos',[productoscontroller::class, 'getitem']);
+Route::get('/v1/productos',[productoscontroller::class, 'tore']);
+Route::get('/v1/productos',[productoscontroller::class, 'putupdate']);
+Route::get('/v1/productos',[productoscontroller::class, 'patchupdate']);
+Route::get('/v1/productos',[productoscontroller::class, 'delete']);
+
+
+Route::get('/v1/productos',[productoscontroller::class, 'obtener listado']);
+Route::get('/v1/productos/{id}',[productoscontroller::class, 'obtener elemento']);
+Route::post('/v1/productos',[productoscontroller::class, 'guardar']);
+Route::put('/v1/productos',[productoscontroller::class, 'editarput']);
+Route::patch('/v1/productos',[productoscontroller::class, 'editarpatch']);
+
+Route::delete('/v1/productos/{id}',[productoscontroller::class,'eliminar']);
+s
